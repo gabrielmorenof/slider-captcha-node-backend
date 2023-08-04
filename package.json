@@ -2,7 +2,7 @@
   "name": "slider-captcha-server",
   "version": "1.0.0",
   "description": "Package to support flutter/android/ios libs of slidercaptcha in server",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "test": "npm run test",
     "build": "tsc"
