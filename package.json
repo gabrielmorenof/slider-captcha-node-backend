@@ -1,0 +1,26 @@
+{
+  "name": "slider-captcha-server",
+  "version": "1.0.0",
+  "description": "Package to support flutter/android/ios libs of slidercaptcha in server",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test",
+    "build": "tsc"
+  },
+  "keywords": [
+    "slider",
+    "captcha",
+    "captcha",
+    "native",
+    "alternative"
+  ],
+  "author": "Gabriel Moreno Freitas",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.4.7",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "image-js": "^0.35.4"
+  }
+}
