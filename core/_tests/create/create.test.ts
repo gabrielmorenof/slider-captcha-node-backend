@@ -8,8 +8,6 @@ import * as path from 'path';
       const slider_puzzle = await SliderPuzzle.new(imagePath);
   
       console.log('SOLUTION:' + JSON.stringify(slider_puzzle));
-      console.log('x:', slider_puzzle.x);
-      console.log('y:', slider_puzzle.y);
   
   
     } catch (error) {
