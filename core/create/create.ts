@@ -1,18 +1,8 @@
 import { Image } from 'image-js';
 import { randomInt } from 'crypto';
+import { SliderCaptchaDTO } from './slider-captcha.dto';
 
 export class SliderPuzzle {
-  public cropped_imageBase64: string;
-  public puzzle_pieceBase64: string;
-  public x: number;
-  public y: number;
-
-  constructor(croppedImageBase64: string, puzzlePieceBase64: string, x: number, y: number) {
-    this.cropped_imageBase64 = croppedImageBase64;
-    this.puzzle_pieceBase64 = puzzlePieceBase64;
-    this.x = x;
-    this.y = y;
-  }
 
   static randomPosition(maxX: number, maxY: number): { x: number; y: number } {
     return {
@@ -52,7 +42,7 @@ export class SliderPuzzle {
       }
       const croppedImageBase64 = await croppedImageWithHole.toDataURL('image/png');
 
-      return new SliderPuzzle(croppedImageBase64, puzzlePieceBase64, x, y);
+      return new SliderCaptchaDTO(croppedImageBase64, puzzlePieceBase64, x, y);
     } catch (error) {
       throw new Error(`Erro ao criar o quebra-cabeça: ${error}`);
     }
