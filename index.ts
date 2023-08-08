@@ -1,1 +1,0 @@
-export { SliderPuzzle } from './core/create/create';
